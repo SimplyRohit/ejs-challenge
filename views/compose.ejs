@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<h1>Compose</h1>
+<form class ="" action="/compose" method="post">
+<label>title</label>
+<input style="display: block;" type="text" name="title">
+<label style="display: block;">post</label>
+<textarea name="post" cols="100" rows="5"></textarea>
+<button style="margin-top: 10px; background-color: lightblue; color: aliceblue; font-style: italic; display: block;" type="submit" name="publish" >publish</button>
+</form>
+
+
+
+<%- include('partials/footer.ejs') %>
+
+
+
+<%# we can do this with boostrap %>

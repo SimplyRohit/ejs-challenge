@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h1> Home</h1>
+<p><%= HSC %></p>
+<% newposts.forEach(function(post) { %>
+    <h1> <%= post.title %> </h1> 
+    <p> <%= post.post.substring(0,100) %> + <a href="/posts/<%=post.title %> " > readmore </a> </p>
+
+    
+    <% }); %>
+
+<%# for (let i = 0; i < newposts.length; i++) { %>
+<%# console.log(newposts[i]) } %>
+
+<%- include('partials/footer') %>
